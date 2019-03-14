@@ -1,0 +1,26 @@
+.products h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.products ul {
+
+    list-style: none;
+    padding-left: 30px;
+}
+
+.products li {
+    margin-bottom: 20px;
+
+}
+
+.products a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #333;
+    transition: .2s;
+}
+
+.products a:hover {
+    color: #a691a0;
+}
