@@ -1,3 +1,8 @@
+Note: This SPA contains sections "Kontakt" and "Panel Admina" which only symulate contact form/login form and aren't connected to any database for now.
+
+To start project please run "npm install" in your command line
+Then please run "npm start" to run the scripts
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
