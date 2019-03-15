@@ -1,10 +1,14 @@
-.login {
-    display: block;
-    margin: 20px 0 0 15%;
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
-.password {
-    margin-left: 14.3%;
+.login {
+    display: block;
+    margin-top: 20px;
 }
 
 .login input {
@@ -18,15 +22,12 @@
 
 .login--button {
     display: block;
-    margin: 30px auto auto 30%;
-    width: 100px;
-    background-color: #fff;
-    border: 2px solid #222;
-    border-radius: 5px;
-    padding: 5px 10px;
-    cursor: pointer;
+    margin: 30px 0 0 34%;
     font-size: 20px;
-    transition: .2s;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .login--button:hover {
