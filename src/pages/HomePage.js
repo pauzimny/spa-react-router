@@ -38,6 +38,7 @@ const HomePage = () => {
     });
     client.getEntries({ content_type: "postBlog" }).then(response => {
       setArticles([...articles, response]);
+      console.log(response);
     });
   });
 
