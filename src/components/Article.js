@@ -1,12 +1,12 @@
 import React from "react";
 import "../styles/Article.css";
 
-const Article = ({ title, author, text }) => {
+const Article = props => {
   return (
     <article>
-      <h3>{title}</h3>
-      <span>{author}</span>
-      <p>{text}</p>
+      <h3>{props.fields.title}</h3>
+      <p>{props.fields.postBody}</p>
+      <span>{props.fields.author}</span>
     </article>
   );
 };
