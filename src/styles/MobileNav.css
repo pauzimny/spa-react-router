@@ -1,0 +1,27 @@
+.nav__mobile {
+    display: block;
+    position: absolute;
+    top: 22%;
+    left: 5%;
+}
+
+@media only screen and (min-width: 801px) {
+    .nav__mobile {
+        display: none;
+    }
+}
+
+.mobile__listItem {
+    text-decoration: none;
+
+    text-transform: uppercase;
+    color: #222;
+}
+
+.active {
+    color: #bbb;
+}
+
+.mobile__menu-item:hover {
+    background-color: #ddd;
+}

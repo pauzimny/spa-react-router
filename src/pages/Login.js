@@ -3,15 +3,15 @@ import "../styles/Login.css";
 const Login = () => {
   return (
     <div className="form">
-      <label className="login" htmlFor="">
-        Podaj login
-        <input type="text" />
+      <label className="login">
+        login
+        <input className="login__input" type="text" />
       </label>
-      <label className="login password" htmlFor="">
-        Podaj hasło
-        <input type="password" />
+      <label className="login password">
+        password
+        <input className="login__input--password" type="password" />
       </label>
-      <button className="login--button">Zaloguj</button>
+      <button className="login--button">Log in</button>
     </div>
   );
 };

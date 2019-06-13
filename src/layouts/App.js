@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 import Navigation from "./Navigation";
+import MobileNav from "./MobileNav";
 import Page from "./Page";
 
 import "../styles/App.css";
@@ -14,7 +15,10 @@ class App extends Component {
         <div className="app">
           <header>{<Header />}</header>
           <main>
-            <aside>{<Navigation />}</aside>
+            <aside className="app__aside">
+              {<Navigation />}
+              <MobileNav />
+            </aside>
             <section className="page">{<Page />}</section>
           </main>
           <footer>{<Footer />}</footer>

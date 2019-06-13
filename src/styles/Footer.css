@@ -1,5 +1,6 @@
-footer span {
+.footer__span {
     color: #ac8573;
+    padding-right: 4px;
 }
 
 footer p {

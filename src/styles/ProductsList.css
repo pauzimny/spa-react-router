@@ -1,17 +1,125 @@
-.products h2 {
-    margin-bottom: 20px;
+.products {
+    width: 100vw;
+    margin-top: 6%;
+}
+
+.products__header {
+    width: 100%;
+    text-align: center;
     text-transform: uppercase;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
-.products ul {
-
+.products__list {
+    display: flex;
+    justify-content: space-evenly;
     list-style: none;
-    padding-left: 30px;
+    flex-wrap: wrap;
 }
 
-.products li {
-    margin-bottom: 20px;
+.products__item {
+    /* flex-basis: 33%; */
+    flex-basis: 60%;
+    margin: 10px;
+    padding: 15px;
+    /* border: 2px solid transparent; */
+    border: 2px solid #ddd;
+    border-radius: 5%;
+    box-shadow: 0 0 10px 0 #ddd;
+}
 
+.products__link {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products__name {
+    text-decoration: none;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.products__link {
+    text-decoration: none;
+    color: #222;
+}
+
+.products__image {
+    /* height: 300px; */
+    height: 200px;
+}
+
+.products__item:hover {
+    box-shadow: 0 0 30px 0 #ccc;
+}
+
+.products__link:hover {
+    color: #a691a0;
+}
+
+@media only screen and (min-width:801px) {
+
+    .products {
+        margin-top: 1%;
+        width: 60vw;
+    }
+
+    .products__header {
+        margin-bottom: 50px;
+    }
+
+    .products__image {
+        max-height: 300px;
+        max-width: 250px;
+    }
+
+    .products__item {
+        flex-basis: 60%;
+
+    }
+
+    .products__name {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+
+    .products {
+        width: 75vw;
+    }
+
+    .products__item {
+        flex-basis: 33%;
+
+    }
+}
+
+
+/* .products__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    flex-basis: 33%;
+    width: 33%;
+}
+
+.products__name {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+
+}
+
+.products__container {
+    flex-basis: 50%;
 }
 
 .products a {
@@ -24,3 +132,7 @@
 .products a:hover {
     color: #a691a0;
 }
+
+.products__image {
+    height: 300px;
+} */

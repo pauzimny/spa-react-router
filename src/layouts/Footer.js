@@ -5,14 +5,14 @@ import "../styles/Footer.css";
 const Footer = () => {
   return (
     <div>
-      <h2>Stopka</h2>
+      <h2>footer</h2>
       <Route
         path="/"
         exact
         render={props => {
           return (
             <p>
-              Jesteś na <span>stronie głównej</span>
+              You're on<span> main page</span>
             </p>
           );
         }}
@@ -24,7 +24,9 @@ const Footer = () => {
         render={props => {
           return (
             <p>
-              Jesteś na stronie <span>{props.match.params.page}</span>
+              You're on{" "}
+              <span className="footer__span">{props.match.params.page}</span>
+              page
             </p>
           );
         }}

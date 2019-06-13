@@ -1,27 +1,74 @@
-.contact textarea {
-    margin: 20px 0;
-    font-size: 16px;
+.contact {
+    display: flex;
+    flex-direction: column;
     width: 80%;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #bbb;
+    box-shadow: 0 0 12px 0 #aaa;
+    border-radius: 5px;
+
+}
+
+.contact__header {
+    text-align: center;
+    color: #fff;
+}
+
+.contact__textarea {
+    /* margin: 20px 0; */
+    margin: 20px 0;
+    align-self: center;
+    font-size: 16px;
+    width: 100%;
     min-height: 200px;
     line-height: 1.6;
     border-radius: 5px;
-    box-shadow: 0 0 4px 0;
+    border-color: #fff;
+    box-shadow: 0 0 6px 0 #fff;
+    padding-left: 10px;
 }
 
 .contact button {
     display: block;
-    margin: 0 20% 0 auto;
-    border: 2px solid #222;
+    margin: 0 auto;
+    border: 1px solid #fff;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: transparent;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 20px;
     transition: .2s;
+    color: #fff;
+    transition: .3s;
+    box-shadow: 0 0 5px 0 #fff;
 
 }
 
 .contact button:hover {
-    background-color: #c2cea9;
+    /* background-color: #d3763d; */
+    box-shadow: 0 0 15px 0 #fff;
 
+}
+
+@media only screen and (min-width:769px) {
+    .contact {
+        margin-top: 0;
+        width: 50%;
+    }
+
+    .contact__header {
+        text-align: left;
+    }
+
+    .contact__form {
+        /* width: 40vw; */
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact button {
+        align-self: flex-end;
+    }
 }

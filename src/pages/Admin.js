@@ -7,7 +7,7 @@ const Admin = () => {
   return (
     <Route
       render={() =>
-        permission ? <h3>Panel Admina-witamy</h3> : <Redirect to="/login" />
+        permission ? <h3>Admin panel- hello!</h3> : <Redirect to="/login" />
       }
     />
   );

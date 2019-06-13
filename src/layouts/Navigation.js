@@ -4,9 +4,9 @@ import "../styles/Navigation.css";
 
 const list = [
   { name: "start", path: "/", exact: true },
-  { name: "produkty", path: "/products" },
-  { name: "kontakt", path: "/contact" },
-  { name: "panel admina", path: "/admin" }
+  { name: "products", path: "/products" },
+  { name: "contact", path: "/contact" },
+  { name: "admin panel", path: "/admin" }
 ];
 const Navigation = () => {
   const menu = list.map(menuItem => (
