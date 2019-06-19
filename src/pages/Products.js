@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Product from "../components/Product";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Products = ({ match, location, params }, props) => {
   console.log(location);
@@ -10,6 +11,9 @@ const Products = ({ match, location, params }, props) => {
   return (
     <React.Fragment>
       <div className="product-site">
+        <Link className="product-site__icon" to="/">
+          <FontAwesomeIcon icon="home" />
+        </Link>
         <Link className="product-site__link" to="/products">
           > products list
         </Link>

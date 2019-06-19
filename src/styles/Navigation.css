@@ -19,9 +19,10 @@
     text-decoration: none;
     color: #222;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 300;
     padding: 10px;
     transition: 0.3s;
+    font-family: 'open sans';
 }
 
 .main__listItem:hover {
@@ -30,11 +31,11 @@
 }
 
 .main__listItem.active {
-    border-left: 10px solid #ac8573;
+    border-left: 10px solid #c2cea9;
     transform: translateX(0px);
 }
 
-.main__list li:nth-child(1) .main__listItem.active {
+/* .main__list li:nth-child(1) .main__listItem.active {
     border-left-color: #c2cea9;
 }
 
@@ -44,8 +45,4 @@
 
 .main__list li:nth-child(3) .main__listItem.active {
     border-left-color: #ac8573;
-}
-
-/* .main__list li:nth-child(4) .main__listItem.active {
-    border-left-color: #4b5b2a;
 } */

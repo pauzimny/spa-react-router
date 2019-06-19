@@ -1,8 +1,24 @@
-.footer__span {
+/* .footer__span {
     color: #ac8573;
     padding-right: 4px;
+} */
+
+.footer {
+    font-size: 14px;
+    color: #fff;
 }
 
-footer p {
-    font-size: 14px;
+.footer__contact {
+    text-transform: capitalize;
+}
+
+.footer__icon-container {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__icon {
+    height: 50px;
 }

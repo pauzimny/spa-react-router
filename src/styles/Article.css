@@ -54,6 +54,18 @@ article span {
     color: #999;
 }
 
+.article__source--link {
+    font-size: 10px;
+    padding: 0 5%;
+    text-decoration: none;
+    color: #999;
+}
+
+.article__source--link:hover {
+    color: #c2cea9;
+    text-decoration: underline;
+}
+
 /* @media only screen and (min-width: 801px) {
     .article {
         width: 70vw;
@@ -73,11 +85,14 @@ article span {
 
     .article__content {
         flex-direction: row;
+        width: 90%;
+        /* margin: 0 auto; */
     }
 
     .article__post,
     .article__date,
-    .article__author {
+    .article__author,
+    .article__source--link {
         padding: 0;
     }
 

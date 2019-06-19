@@ -34,6 +34,7 @@ const HomePage = () => {
       author={article.fields.author}
       date={article.fields.dateAdded}
       img={article.fields.image.fields.file.url}
+      source={article.fields.source}
     />
   ));
   console.log(artList);

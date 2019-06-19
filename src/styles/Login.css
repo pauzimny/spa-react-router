@@ -67,8 +67,10 @@
 
 @media only screen and (min-width:769px) {
     .form {
-        margin-top: 0;
-        max-width: 370px;
+        margin: 0 auto;
+        /* max-width: 370px; */
+        width: 50%;
+        transform: translateX(-135px);
     }
 
 }

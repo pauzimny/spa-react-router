@@ -13,8 +13,8 @@ class App extends Component {
     return (
       <Router>
         <div className="app">
-          <header>{<Header />}</header>
-          <main>
+          <header className="app__header">{<Header />}</header>
+          <main className="app__main">
             <aside className="app__aside">
               {<Navigation />}
               <MobileNav />

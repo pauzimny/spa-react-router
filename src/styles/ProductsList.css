@@ -8,7 +8,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #333;
-    font-family: 'Lato', sans-serif;
+    font-family: 'lato', sans-serif;
     font-weight: 300;
 }
 
@@ -42,6 +42,8 @@
     padding-top: 5px;
     margin-bottom: 10px;
     text-align: center;
+    font-size: 16px;
+    font-family: "lato", sans-serif;
 }
 
 .products__link {
@@ -59,14 +61,16 @@
 }
 
 .products__link:hover {
-    color: #a691a0;
+    color: #c2cea9;
 }
 
 @media only screen and (min-width:801px) {
 
     .products {
-        margin-top: 1%;
-        width: 60vw;
+        margin: 1% auto 0 auto;
+        /* width: 60vw; */
+        width: 50%;
+        transform: translateX(-135px);
     }
 
     .products__header {

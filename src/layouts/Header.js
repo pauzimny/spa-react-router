@@ -8,7 +8,8 @@ import { Route, Switch } from "react-router-dom";
 const Header = () => {
   return (
     <React.Fragment>
-      <Switch>
+      <img src={img1} alt="site-header" />
+      {/* <Switch>
         <Route
           path="/"
           exact
@@ -27,7 +28,7 @@ const Header = () => {
           render={() => <img src={img1} alt="kosmetyki" />}
         />
         <Route render={() => <img src={img1} alt="kosmetyki" />} />
-      </Switch>
+      </Switch> */}
     </React.Fragment>
   );
 };

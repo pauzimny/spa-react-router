@@ -1,48 +1,32 @@
 import React from "react";
 import { Route } from "react-router-dom";
 import "../styles/Footer.css";
+import Icon from "../components/Icon";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
   return (
-    <div>
-      <h2>footer</h2>
-      <Route
-        path="/"
-        exact
-        render={props => {
-          return (
-            <p>
-              You're on<span> main page</span>
-            </p>
-          );
-        }}
-      />
-
-      <Route
-        path="/:page"
-        exact
-        render={props => {
-          return (
-            <p>
-              You're on{" "}
-              <span className="footer__span">{props.match.params.page}</span>
-              page
-            </p>
-          );
-        }}
-      />
-
-      <Route
-        path="/:page/:idProduct"
-        exact
-        render={props => {
-          return (
-            <p>
-              Jesteś na stronie <span>{props.match.params.idProduct}</span>
-            </p>
-          );
-        }}
-      />
+    <div className="footer">
+      <p className="footer__contact">Contact me on social media</p>
+      <ul className="footer__icon-container">
+        <Icon
+          className="footer__icon"
+          icon={<FontAwesomeIcon icon={["fab", "facebook"]} />}
+          url={"http://facebook.com"}
+          alt={"faceook-contact"}
+        />
+        <Icon
+          icon={<FontAwesomeIcon icon={["fab", "twitter"]} />}
+          url={"http://twitter.com"}
+          alt={"twitter-contact"}
+        />
+        <Icon
+          icon={<FontAwesomeIcon icon={["fab", "instagram"]} />}
+          url={"http://instagram.com"}
+          alt={"instagram-contact"}
+        />
+      </ul>
+      Created by Paulina Zimny 2019
     </div>
   );
 };

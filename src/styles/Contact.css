@@ -54,8 +54,9 @@
 
 @media only screen and (min-width:769px) {
     .contact {
-        margin-top: 0;
+        margin: 0 auto;
         width: 50%;
+        transform: translateX(-135px);
     }
 
     .contact__header {

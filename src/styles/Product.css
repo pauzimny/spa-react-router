@@ -12,6 +12,7 @@
     font-family: 'open sans';
     text-align: center;
     color: #222;
+    font-weight: 300;
     width: 100%;
     padding: 0 10% 20px 10%;
 }
@@ -29,15 +30,18 @@
     font-size: 14px;
     text-align: justify;
     width: 100%;
+    font-weight: 300;
 }
 
 .product__container--image {
     margin: 20px 5%;
     height: 300px;
+    padding-bottom: 40px;
+
 
 }
 
-.product__img {
+.product img {
     max-height: 100%;
     max-width: 200px;
 }

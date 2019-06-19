@@ -1,0 +1,9 @@
+.icon {
+    list-style: none;
+    width: 50px;
+}
+
+.icon__link {
+    font-size: 30px;
+    color: #fff;
+}
