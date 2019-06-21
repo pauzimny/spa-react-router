@@ -8,9 +8,11 @@
     justify-content: center;
     align-items: center;
     /* flex-wrap: wrap; */
-    background-color: #bbb;
+    /* background-color: #bbb; */
+    background-color: #c2cea9;
     padding: 30px;
-    box-shadow: 0 0 12px 0 #999;
+    box-shadow: 0 0 6px 0 #c2cea9;
+    border-radius: 5px;
 
 }
 
@@ -64,13 +66,14 @@
 /* .login__input--password {
     margin-left: 10px;
 } */
-
-@media only screen and (min-width:769px) {
+/* 769px */
+@media only screen and (min-width:900px) {
     .form {
         margin: 0 auto;
         /* max-width: 370px; */
         width: 50%;
         transform: translateX(-135px);
+
     }
 
 }

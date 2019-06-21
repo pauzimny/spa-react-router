@@ -54,6 +54,7 @@ main {
 }
 
 .page {
+    margin-top: 5%;
     width: calc(100% - 240px);
     /* margin: 0 2% 0 0; */
     flex-grow: 1;
@@ -74,7 +75,7 @@ footer {
     text-align: center;
     text-transform: uppercase;
     color: #222;
-    box-shadow: 0 0 40px #c2cea9;
+    box-shadow: 0 0 20px #c2cea9;
 }
 
 .product-site {

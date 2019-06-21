@@ -1,6 +1,7 @@
 article {
     margin-top: 20px;
     width: 100%;
+    padding: 0 5%;
     /* width: 100vw; */
     display: flex;
     flex-direction: column;
@@ -38,25 +39,30 @@ article span {
 .article__post {
     font-size: 14px;
     text-align: justify;
-    padding: 0 5%;
+    /* padding: 0 5%; */
 }
 
 .article__date {
     margin-top: 30px;
     font-size: 12px;
-    padding: 0 5%;
+    /* padding: 0 5%; */
     color: #999;
 }
 
 .article__author {
     font-size: 12px;
-    padding: 0 5%;
+    /* padding: 0 5%; */
     color: #999;
+}
+
+.article__source {
+    line-height: 12px;
 }
 
 .article__source--link {
     font-size: 10px;
-    padding: 0 5%;
+    line-height: 12px;
+    /* padding: 0 5%; */
     text-decoration: none;
     color: #999;
 }
@@ -75,6 +81,7 @@ article span {
 @media only screen and (min-width: 1024px) {
     .article {
         width: 100%;
+
     }
 
     .article__title {
