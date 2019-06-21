@@ -1,4 +1,7 @@
-Note: This app contains sections "Kontakt" and "Panel Admina" which only symulate contact form/login form and aren't connected to any database for now.
+Note:
+1. Section "Admin" only simulates login form and is not connected to any database for now.
+2. If you want to send me an email via contact form, please feel free :).
+
 
 To start project please run "npm install" in your command line
 Then please run "npm start" to run the scripts
