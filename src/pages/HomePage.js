@@ -39,12 +39,7 @@ const HomePage = () => {
   ));
   console.log(artList);
 
-  return (
-    <div className="home">
-      {/* <span>{image}</span> */}
-      {artList}
-    </div>
-  );
+  return <div className="home">{artList}</div>;
 };
 
 export default HomePage;

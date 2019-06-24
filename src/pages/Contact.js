@@ -33,22 +33,24 @@ class Contact extends React.Component {
   };
   render() {
     return (
-      <div className="contact">
-        <form className="contact__form" onSubmit={this.handleSubmit}>
-          <h3 className="contact__header">Give me a message!</h3>
-          <textarea
-            className="contact__textarea"
-            value={this.state.value}
-            onChange={this.handleChange}
-            placeholder="Please write your message here..."
+      <>
+        <h3 className="contact__header">Give me a message!</h3>
+        <div className="contact">
+          <form className="contact__form" onSubmit={this.handleSubmit}>
+            <textarea
+              className="contact__textarea"
+              value={this.state.value}
+              onChange={this.handleChange}
+              placeholder="Please write your message here..."
+            />
+            <button>Send</button>
+          </form>
+          <Prompt
+            when={this.state.value}
+            message="The form is empty, are you sure you want to quit?"
           />
-          <button>Send</button>
-        </form>
-        <Prompt
-          when={this.state.value}
-          message="The form is empty, are you sure you want to quit?"
-        />
-      </div>
+        </div>
+      </>
     );
   }
 }

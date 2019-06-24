@@ -14,8 +14,10 @@ const Article = props => {
       </section>
 
       <p className="article__date">{props.date}</p>
-      <p className="article__author">{props.author}</p>
+      <p className="article__author">Added by: {props.author}</p>
       <p className="article__source">
+        {" "}
+        Source:
         <a
           className="article__source--link"
           href={props.source}

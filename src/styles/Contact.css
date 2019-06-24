@@ -6,7 +6,7 @@
     margin: 0 auto;
     padding: 10px;
     background-color: #c2cea9;
-    box-shadow: 0 0 6px 0 #c2cea9;
+    /* box-shadow: 0 0 6px 0 #c2cea9; */
     border-radius: 5px;
 
 }
@@ -17,6 +17,9 @@
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 300;
+    padding: 5px 0;
+    background-color: #c2cea9;
+    border-radius: 5px;
 }
 
 .contact__textarea {
@@ -24,13 +27,16 @@
     margin: 20px 0;
     align-self: center;
     font-size: 16px;
+    font-family: 'open sans', sans-serif;
     width: 100%;
     min-height: 180px;
     line-height: 1.6;
     border-radius: 5px;
     border-color: #fff;
     box-shadow: 0 0 6px 0 #fff;
-    padding-left: 10px;
+    padding: 10px 0 0 10px;
+    color: #222;
+
 }
 
 .contact button {
@@ -57,13 +63,14 @@
 
 @media only screen and (min-width:769px) {
     .contact {
-        margin: 0 auto;
+        margin: 30px auto;
         width: 50%;
-        transform: translateX(-135px);
+        /* transform: translateX(-135px); */
     }
 
     .contact__header {
         text-align: left;
+        padding-left: 15px;
     }
 
     .contact__form {

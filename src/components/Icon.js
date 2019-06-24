@@ -5,7 +5,7 @@ const Icon = ({ icon, url, alt }) => {
   return (
     <li className="icon">
       <a
-        style={{ fontSize: "30px" }}
+        // style={{ fontSize: "30px" }}
         className="icon__link"
         href={url}
         alt={alt}

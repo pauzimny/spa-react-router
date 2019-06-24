@@ -1,7 +1,7 @@
 .nav__mobile {
     display: block;
     position: absolute;
-    top: 22%;
+    top: 17%;
     left: 9%;
 }
 
@@ -13,7 +13,7 @@
 
 .mobile__listItem {
     text-decoration: none;
-
+    font-weight: 300;
     text-transform: uppercase;
     color: #222;
 }
