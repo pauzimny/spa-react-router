@@ -16,6 +16,7 @@
     font-weight: 300;
     border-radius: 5px;
     background-color: #c2cea9;
+    margin-top: 20px;
     padding: 5px 0;
 
 }
@@ -25,6 +26,7 @@
     justify-content: space-evenly;
     list-style: none;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .products__item {

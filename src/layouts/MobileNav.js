@@ -49,6 +49,7 @@ class MobileNav extends React.Component {
     return (
       <div className="nav__mobile">
         <Button
+          className="nav__mobile__button"
           aria-owns={anchorEl ? "simple-menu" : undefined}
           aria-haspopup="true"
           onClick={this.handleClick}
