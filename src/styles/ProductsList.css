@@ -109,6 +109,7 @@
     }
 
     .products__header {
+        margin-top: 0;
         margin-bottom: 10px;
         padding-left: 15px;
         text-align: left;

@@ -5,6 +5,8 @@ nodemon.json
 
 #env
 .env
+.env.development
+.env.production
 
 # dependencies
 /node_modules

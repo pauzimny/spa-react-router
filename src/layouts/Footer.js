@@ -10,7 +10,6 @@ const Footer = () => {
       <p className="footer__contact">Contact me on social media</p>
       <ul className="footer__icon-container">
         <Icon
-          className="footer__icon"
           icon={<FontAwesomeIcon icon={["fab", "facebook"]} />}
           url={"http://facebook.com"}
           alt={"faceook-contact"}

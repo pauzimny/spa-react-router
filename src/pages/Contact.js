@@ -12,19 +12,20 @@ class Contact extends React.Component {
     this.setState({ value: e.target.value });
   };
   handleSubmit = e => {
-    const host = process.env.REACT_APP_URL || 3004;
+    const url = process.env.REACT_APP_URL;
+    console.log(url);
 
     e.preventDefault();
     axios({
       method: "POST",
-      url: host,
+      url,
       data: {
         message: this.state.value
       }
     }).then(response => {
       console.log(response);
       if (response.data === "success") {
-        alert("Message Sent.");
+        alert("Message Sent");
         this.setState({ value: "" });
       } else if (response.data === "fail") {
         alert("Message failed to send.");
@@ -43,11 +44,11 @@ class Contact extends React.Component {
               onChange={this.handleChange}
               placeholder="Please write your message here..."
             />
-            <button>Send</button>
+            <button type="submit">Send</button>
           </form>
           <Prompt
             when={this.state.value}
-            message="The form is empty, are you sure you want to quit?"
+            message="The form is not empty, are you sure you want to quit?"
           />
         </div>
       </>

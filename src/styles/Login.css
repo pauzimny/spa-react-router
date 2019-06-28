@@ -1,5 +1,5 @@
 .form {
-    margin: 8% auto 0 auto;
+    margin: 30px auto 0 auto;
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -61,6 +61,7 @@
     align-self: center;
     margin-top: 20px;
     transition: .3s;
+    font-family: 'open sans', sans-serif;
     /* box-shadow: 0 0 5px 0 #fff; */
 
 

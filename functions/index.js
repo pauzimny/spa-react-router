@@ -1,24 +1,24 @@
+const functions = require("firebase-functions");
 const express = require("express");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
-const cors = require("cors");
-
 const app = express();
-const port = process.env.PORT;
-const service = process.env.REACT_APP_NODEMAILER_SERVICE;
-const host = process.env.REACT_APP_NODEMAILER_HOST;
-const user = process.env.REACT_APP_NODEMAILER_USER;
-const pass = process.env.REACT_APP_NODEMAILER_PASSWORD;
-const from = process.env.REACT_APP_NODEMAILER_FROM;
-const to = process.env.REACT_APP_NODEMAILER_TO;
-const subject = process.env.REACT_APP_NODEMAILER_SUBJECT;
-const text = process.env.REACT_APP_NODEMAILER_TEXT;
+const cors = require("cors")({ origin: true });
 
+const service = "gmail";
+const host = functions.config().nodemailer.host;
+const user = functions.config().nodemailer.user;
+const pass = functions.config().nodemailer.pass;
+const from = functions.config().nodemailer.from;
+const to = functions.config().nodemailer.to;
+const subject = functions.config().nodemailer.subject;
+const text = functions.config().nodemailer.text;
+
+app.use(cors);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(cors());
-app.use(function(req, res, next) {
+app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
@@ -27,19 +27,11 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.post("/send", (req, res) => {
+app.post("/", (req, res) => {
   res.send("success");
+  console.log(req);
   console.log(req.body);
   console.log("heloo");
-
-  // const output = `
-  // <p>You have a new message</p>
-  // <h3>Contact details
-  // <ul>
-  // <li> Name:${req.body.name}</li>
-  // <li> Email:${req.body.email}</li>
-  // </ul> <h5> ${req.body.message}</h5>
-  // </h3>`;
 
   const output = `<p>You have new message </p>
   <h5>${req.body.message}</h5>`;
@@ -71,15 +63,12 @@ app.post("/send", (req, res) => {
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      return console.log(error);
+      console.log(error);
+    } else {
+      console.log("Message sent: %s", info.messageId);
+      console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
     }
-    console.log("Message sent: %s", info.messageId);
-    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-
-    res.render("home", { msg: "Email has been send" });
   });
 });
 
-app.listen(port, () => {
-  console.log(`Listening on ${port}`);
-});
+exports.api = functions.https.onRequest(app);
