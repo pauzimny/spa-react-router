@@ -13,7 +13,6 @@ class Contact extends React.Component {
   };
   handleSubmit = e => {
     const url = process.env.REACT_APP_URL;
-    console.log(url);
 
     e.preventDefault();
     axios({
@@ -23,7 +22,6 @@ class Contact extends React.Component {
         message: this.state.value
       }
     }).then(response => {
-      console.log(response);
       if (response.data === "success") {
         alert("Message Sent");
         this.setState({ value: "" });

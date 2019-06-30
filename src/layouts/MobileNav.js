@@ -29,7 +29,6 @@ class MobileNav extends React.Component {
     ];
 
     const mobileMenu = list.map(menuItem => (
-      //   <li >
       <MenuItem
         key={menuItem.name}
         className="mobile__menu-item"
@@ -43,7 +42,6 @@ class MobileNav extends React.Component {
           {menuItem.name}
         </NavLink>
       </MenuItem>
-      //   </li>
     ));
 
     return (
@@ -63,10 +61,6 @@ class MobileNav extends React.Component {
           open={Boolean(anchorEl)}
           onClose={this.handleClose}
         >
-          {/* <MenuItem onClick={this.handleClose}>Start</MenuItem>
-          <MenuItem onClick={this.handleClose}>Products</MenuItem>
-          <MenuItem onClick={this.handleClose}>Contact</MenuItem>
-          <MenuItem onClick={this.handleClose}>Admin</MenuItem> */}
           {mobileMenu}
         </Menu>
       </div>

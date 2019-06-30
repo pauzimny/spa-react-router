@@ -15,17 +15,11 @@ const HomePage = () => {
       accessToken: CONTENTFUL_TOKEN
     });
     client.getEntries({ content_type: "article" }).then(entries => {
-      console.log(entries);
       setArticles(entries.items);
       setAssets(entries.includes.Asset);
     });
   }, []);
-  console.log(articles);
-  console.log(assets);
 
-  // const image = assets.map(asset => {
-  //   return <img src={asset.fields.file.url} alt="Asset" />;
-  // });
   const artList = articles.map(article => (
     <Article
       key={article.fields.index}
@@ -37,7 +31,6 @@ const HomePage = () => {
       source={article.fields.source}
     />
   ));
-  console.log(artList);
 
   return <div className="home">{artList}</div>;
 };

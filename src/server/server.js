@@ -29,17 +29,6 @@ app.use(function(req, res, next) {
 
 app.post("/send", (req, res) => {
   res.send("success");
-  console.log(req.body);
-  console.log("heloo");
-
-  // const output = `
-  // <p>You have a new message</p>
-  // <h3>Contact details
-  // <ul>
-  // <li> Name:${req.body.name}</li>
-  // <li> Email:${req.body.email}</li>
-  // </ul> <h5> ${req.body.message}</h5>
-  // </h3>`;
 
   const output = `<p>You have new message </p>
   <h5>${req.body.message}</h5>`;

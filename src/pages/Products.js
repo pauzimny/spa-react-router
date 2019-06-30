@@ -4,10 +4,6 @@ import Product from "../components/Product";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Products = ({ match, location, params }, props) => {
-  console.log(location);
-  console.log(match);
-  console.log(params);
-  console.log(props);
   return (
     <React.Fragment>
       <div className="product-site">
@@ -25,9 +21,6 @@ const Products = ({ match, location, params }, props) => {
         src={location.state.fields.productAvatar.fields.file.url}
         url={location.state.fields.productUrl}
       />
-      {/* <Link className="product-link" to="/products">
-        Powrót do listy produktów
-      </Link> */}
     </React.Fragment>
   );
 };

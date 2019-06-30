@@ -18,13 +18,10 @@ const ProductsList = () => {
     client
       .getEntries({ content_type: "product" })
       .then(contentType => {
-        console.log(contentType);
-        console.log(contentType.items);
         setProducts(contentType.items);
       })
       .catch(console.error);
   }, []);
-  console.log(products);
 
   const list = products.map((product, index) => (
     <li className="products__item" key={index}>
