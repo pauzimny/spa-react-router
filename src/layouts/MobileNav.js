@@ -52,12 +52,17 @@ class MobileNav extends React.Component {
           aria-owns={anchorEl ? "simple-menu" : undefined}
           aria-haspopup="true"
           onClick={this.handleClick}
+          style={{
+            backgroundColor: "#c2cea9",
+            borderRadius: "5px",
+            paddingTop: "3px"
+          }}
         >
           <FontAwesomeIcon
             icon="bars"
             style={{
               backgroundColor: "#c2cea9",
-              fontSize: "30px",
+              fontSize: "20px",
               color: "#fff"
             }}
           />

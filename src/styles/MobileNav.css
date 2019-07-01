@@ -1,11 +1,16 @@
 .nav__mobile {
     display: block;
     position: absolute;
-    top: 17%;
-    left: calc(5% - 8px);
+    top: 20%;
+    /* left: calc(5% - 8px); */
+    left: 5%;
 }
 
-
+.nav__mobile__button {
+    background-color: #c2cea9;
+    border-radius: 5px;
+    padding: 5px;
+}
 
 
 @media only screen and (min-width: 801px) {
