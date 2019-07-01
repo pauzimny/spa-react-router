@@ -33,14 +33,16 @@ class Contact extends React.Component {
   render() {
     return (
       <>
-        <h3 className="contact__header">Give me a message!</h3>
+        <h3 className="contact__header">
+          Hello, here you can give me your feedback
+        </h3>
         <div className="contact">
           <form className="contact__form" onSubmit={this.handleSubmit}>
             <textarea
               className="contact__textarea"
               value={this.state.value}
               onChange={this.handleChange}
-              placeholder="Please write your message here..."
+              placeholder="Write your message here, if you expect an answer, please include your email address"
             />
             <button type="submit">Send</button>
           </form>

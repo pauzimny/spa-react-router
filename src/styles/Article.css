@@ -2,12 +2,8 @@ article {
     margin-top: 20px;
     width: 100%;
     padding: 0 5%;
-    /* width: 100vw; */
     display: flex;
     flex-direction: column;
-    /* background-color: #c2cea9; */
-
-
 }
 
 .article__title {
@@ -16,19 +12,17 @@ article {
     text-align: center;
     color: #fff;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 20px;
     background-color: #c2cea9;
     padding: 5px 15px;
     border-radius: 5px;
-    /* border-bottom: 1px solid #ddd; */
-
 }
 
 .article__content {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
     border-radius: 5px;
     box-shadow: 0 0 5px 0 #fff;
 }
@@ -48,22 +42,16 @@ article span {
 .article__post {
     font-size: 14px;
     text-align: justify;
-    /* padding: 0 5%; */
-    /* background-color: #c2cea9; */
-    /* padding: 30px; */
-    /* border-radius: 5px; */
 }
 
 .article__date {
     margin-top: 30px;
     font-size: 12px;
-    /* padding: 0 5%; */
     color: #999;
 }
 
 .article__author {
     font-size: 12px;
-    /* padding: 0 5%; */
     color: #999;
 }
 
@@ -76,7 +64,6 @@ article span {
 .article__source--link {
     font-size: 10px;
     line-height: 12px;
-    /* padding: 0 5%; */
     text-decoration: none;
     color: #999;
 }
@@ -86,12 +73,6 @@ article span {
     text-decoration: underline;
 }
 
-/* @media only screen and (min-width: 801px) {
-    .article {
-        width: 70vw;
-    }
-} */
-
 @media only screen and (min-width: 801px) {
     .article {
         width: 60vw;
@@ -100,26 +81,22 @@ article span {
 
     .article:nth-child(1) {
         margin-top: 0;
-
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .article {
         width: 75vw;
-
     }
 
     .article__title {
         text-align: left;
         font-size: 20px;
-
     }
 
     .article__content {
         flex-direction: row;
         width: 90%;
-        /* margin: 0 auto; */
     }
 
     .article__post,

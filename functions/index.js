@@ -29,9 +29,6 @@ app.use((req, res, next) => {
 
 app.post("/", (req, res) => {
   res.send("success");
-  console.log(req);
-  console.log(req.body);
-  console.log("heloo");
 
   const output = `<p>You have new message </p>
   <h5>${req.body.message}</h5>`;

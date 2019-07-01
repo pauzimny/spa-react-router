@@ -79,3 +79,10 @@ footer {
     color: #222;
     box-shadow: 0 0 20px #c2cea9;
 }
+
+
+.MuiButton-label-2 {
+    background-color: #c2cea9;
+    border-radius: 5px;
+    padding: 5px 0;
+}

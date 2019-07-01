@@ -4,7 +4,7 @@ import * as contentful from "contentful";
 
 const HomePage = () => {
   const [articles, setArticles] = useState([]);
-  const [assets, setAssets] = useState([]);
+  // const [assets, setAssets] = useState([]);
 
   const CONTENTFUL_TOKEN = process.env.REACT_APP_CONTENTFUL_TOKEN;
   const CONTENTFUL_SPACE = process.env.REACT_APP_CONTENTFUL_SPACE;
@@ -16,13 +16,13 @@ const HomePage = () => {
     });
     client.getEntries({ content_type: "article" }).then(entries => {
       setArticles(entries.items);
-      setAssets(entries.includes.Asset);
+      // setAssets(entries.includes.Asset);
     });
   }, []);
 
   const artList = articles.map(article => (
     <Article
-      key={article.fields.index}
+      key={article.fields.title}
       title={article.fields.title}
       body={article.fields.articleBody}
       author={article.fields.author}

@@ -4,6 +4,7 @@ import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import "../styles/MobileNav.css";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class MobileNav extends React.Component {
   state = {
@@ -52,7 +53,14 @@ class MobileNav extends React.Component {
           aria-haspopup="true"
           onClick={this.handleClick}
         >
-          Menu
+          <FontAwesomeIcon
+            icon="bars"
+            style={{
+              backgroundColor: "#c2cea9",
+              fontSize: "30px",
+              color: "#fff"
+            }}
+          />
         </Button>
         <Menu
           disableAutoFocusItem

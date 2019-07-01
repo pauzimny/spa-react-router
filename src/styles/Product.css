@@ -34,7 +34,6 @@
     padding: 20px;
     background-color: #c2cea9;
     border-radius: 5px;
-    box-shadow: 0 0 6px 0 #c2cea9;
 }
 
 .product__container--image {
@@ -84,7 +83,7 @@
     width: 90%;
     text-align: left;
     padding: 10px 10% 10px 15px;
-    margin: 7% auto 0 auto;
+    margin: 20px auto 0 auto;
     border-bottom: 2px solid #c2cea9;
     background-color: #c2cea9;
     color: #fff;
@@ -96,13 +95,13 @@
     text-decoration: none;
     padding-right: 8px;
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
     transition: .3s;
     border: 1px solid transparent;
 }
 
 .product-site__item {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 

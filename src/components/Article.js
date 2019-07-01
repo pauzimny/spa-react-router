@@ -2,8 +2,6 @@ import React from "react";
 import "../styles/Article.css";
 
 const Article = props => {
-  console.log(props);
-
   return (
     <article className="article">
       <h3 className="article__title">{props.title}</h3>

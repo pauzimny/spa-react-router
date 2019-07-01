@@ -1,16 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "../src/layouts/App";
-import * as contentful from "contentful";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import {
   faCheckSquare,
-  faCoffee,
-  faHome
+  faHome,
+  faBars
 } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faCheckSquare, faCoffee, fab, faHome);
+library.add(faCheckSquare, fab, faHome, faBars);
 // var client = contentful.createClient({
 //   space: "a6x3r1vs2g9c",
 //   accessToken: "y0oZpRPX5uHlU72fueFoiLrvKaHVo8txWX6UniyjAsc"
