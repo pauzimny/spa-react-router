@@ -1,12 +1,12 @@
 header {
-    width: 100vw;
+    width: 100%;
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 30px #bbb;
 }
 
 header img {
-    width: 100vw;
+    width: 100%;
     background-size: contain;
     transform: translateY(-20%);
 
